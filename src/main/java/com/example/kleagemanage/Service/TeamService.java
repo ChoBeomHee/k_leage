@@ -26,8 +26,20 @@ public class TeamService {
         team.setRanking(updateteam.getRanking());
         team.setWin(updateteam.getWin());
         team.setLoss(updateteam.getLoss());
+        team.setPoint(updateteam.getPoint());
+        team.setGamenumber(updateteam.getGamenumber());
+        team.setCountpoint(updateteam.getCountpoint());
+        team.setDifferenceingain(updateteam.getDifferenceingain());
+        team.setDraw(updateteam.getDraw());
 
         return "성공";
+    }
+
+    @Transactional
+    public Team geteachTeam(String teamname){
+        Team team = teamRepository.findByTeamname(teamname).get();
+
+        return team;
     }
     @Transactional
     public List<Team> getTeams() {

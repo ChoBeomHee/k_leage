@@ -27,7 +27,7 @@ public class Team {
     private int ranking;
 
     @Column
-    private int gamenunmber;
+    private int gamenumber;
 
     @Column
     private int win;

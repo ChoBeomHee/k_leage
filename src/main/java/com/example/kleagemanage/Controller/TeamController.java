@@ -12,8 +12,18 @@ public class TeamController {
     private TeamService teamService;
 
     @GetMapping("/")
+    public String test(){
+        return "정상";
+    }
+
+    @GetMapping("/user/")
     public List<Team> teamInfo() {
        return teamService.getTeams();
+    }
+
+    @GetMapping("/team/{teamname}")
+    public Team eachTeam(@PathVariable String teamname){
+        return teamService.geteachTeam(teamname);
     }
 
     @PutMapping("/update/{teamname}")

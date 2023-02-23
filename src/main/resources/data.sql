@@ -1,4 +1,4 @@
-insert into team (id, teamname, point, ranking, gamenunmber, win, loss, draw, countpoint, differenceingain)
+insert into Team (id, teamname, point, ranking, gamenumber, win, loss, draw, countpoint, differenceingain)
 values(1,'강원',0,10,0,0,0,0,0,0),
       (2,'김천',0,10,0,0,0,0,0,0),
       (3,'대구',0,10,0,0,0,0,0,0),
